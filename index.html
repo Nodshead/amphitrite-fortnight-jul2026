@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Amphitrite · Fortnight in Review · 3 to 17 July 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#10161e; --bg2:#141c26; --panel:#171f2a; --panel2:#1b2532;
+  --line:rgba(201,169,106,.16); --line-bright:rgba(201,169,106,.42);
+  --ink:#f4f2ec; --ink2:#c8c3b4; --ink3:#8f8c80;
+  --brass:#c9a96a; --brass-deep:#a8874a;
+  --green:#3f6b5c; --green2:#5d8f7c;
+  --teal:#37c2b6; --blue:#185FA5;
+  --d-gold:#c98500; --d-green:#199e70; --d-blue:#3987e5;
+  --r:14px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  background:var(--bg); color:var(--ink2);
+  font-family:"DM Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+  font-size:15.5px; line-height:1.75; overflow-x:hidden;
+}
+body::before{
+  content:""; position:fixed; inset:0; z-index:-1; pointer-events:none;
+  background:
+    radial-gradient(900px 600px at 85% -5%, rgba(63,107,92,.14), transparent 60%),
+    radial-gradient(800px 620px at -10% 30%, rgba(24,95,165,.10), transparent 60%),
+    radial-gradient(700px 520px at 60% 110%, rgba(201,169,106,.07), transparent 60%);
+}
+h1,h2,h3,.serif{font-family:"Playfair Display",Georgia,serif;color:var(--ink);font-weight:500}
+a{color:var(--teal);text-decoration:none}
+a:hover{text-decoration:underline}
+.wrap{max-width:1080px;margin:0 auto;padding:0 26px}
+.num{font-variant-numeric:tabular-nums}
+
+/* ---------- nav ---------- */
+nav{
+  position:fixed;top:0;left:0;right:0;z-index:50;
+  background:rgba(16,22,30,.82);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.navin{max-width:1080px;margin:0 auto;padding:10px 26px;display:flex;align-items:center;gap:14px}
+.badge{width:38px;height:38px;border-radius:50%;overflow:hidden;flex:0 0 auto;
+  background:#0d131b;box-shadow:0 0 0 3px rgba(201,169,106,.08);display:flex;align-items:center;justify-content:center}
+.badge img{width:100%;height:100%;object-fit:cover;filter:saturate(.65) hue-rotate(8deg)}
+.badge .mono{font-family:"Playfair Display",serif;color:var(--brass);font-size:20px}
+.wordmark{color:var(--ink);font-weight:700;letter-spacing:.4px;white-space:nowrap}
+.wordmark small{display:block;font-weight:400;color:var(--ink3);font-size:11px;letter-spacing:1.6px;text-transform:uppercase}
+.navchip{margin-left:auto;font-size:12px;color:var(--brass);border:1px solid var(--line-bright);
+  border-radius:999px;padding:4px 13px;letter-spacing:1.2px;text-transform:uppercase;white-space:nowrap}
+.pbtn{background:var(--blue);color:#fff;border:0;border-radius:999px;padding:8px 18px;font:700 13px "DM Sans",sans-serif;
+  cursor:pointer;letter-spacing:.4px;white-space:nowrap}
+.pbtn:hover{background:#1b6cb8}
+#scrollbar{position:fixed;top:0;left:0;height:2px;background:linear-gradient(90deg,var(--brass),var(--teal));z-index:60;width:0}
+
+/* ---------- hero ---------- */
+header.wrap{padding:150px 26px 30px;text-align:center}
+.kicker{font-size:12px;letter-spacing:3px;text-transform:uppercase;color:var(--brass);margin-bottom:18px}
+.kicker::before,.kicker::after{content:"";display:inline-block;width:44px;height:1px;background:var(--line-bright);vertical-align:middle;margin:0 14px}
+h1{font-size:clamp(34px,5.4vw,58px);line-height:1.12;letter-spacing:.2px}
+h1 em{font-style:italic;color:var(--brass)}
+.herosub{max-width:640px;margin:20px auto 0;color:var(--ink2)}
+.herosub b{color:var(--ink);font-weight:500}
+.heroline{margin-top:14px;font-size:13px;color:var(--ink3);letter-spacing:.6px}
+
+/* ---------- stat band ---------- */
+.stats{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;margin:44px 0 8px}
+.stat{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-radius:var(--r);padding:20px 10px 16px;text-align:center;position:relative;overflow:hidden}
+.stat::after{content:"";position:absolute;inset:auto 0 0 0;height:2px;background:linear-gradient(90deg,transparent,var(--stripe,var(--brass)),transparent);opacity:.55}
+.stat .v{font-family:"Playfair Display",serif;font-size:clamp(26px,3.2vw,40px);color:var(--ink);line-height:1.1}
+.stat .l{font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink3);margin-top:7px}
+
+/* ---------- sections ---------- */
+section{padding:54px 0 8px}
+.slabel{display:flex;align-items:center;gap:16px;font-size:12px;letter-spacing:2.6px;
+  text-transform:uppercase;color:var(--brass);margin-bottom:14px}
+.slabel::after{content:"";flex:1;height:1px;background:var(--line)}
+.snum{width:30px;height:30px;border-radius:50%;border:1px solid var(--line-bright);display:inline-flex;
+  align-items:center;justify-content:center;font-family:"Playfair Display",serif;font-size:14px;color:var(--brass);flex:0 0 auto}
+h2{font-size:clamp(25px,3.4vw,36px);margin-bottom:14px}
+.lede{max-width:760px;color:var(--ink2)}
+.lede b{color:var(--ink);font-weight:500}
+.divider{height:1px;margin:48px 0 0;background:linear-gradient(90deg,transparent,var(--line-bright),transparent)}
+
+/* ---------- pipeline strip ---------- */
+.pipe{display:flex;align-items:stretch;gap:0;margin:30px 0 10px;flex-wrap:wrap}
+.pipecell{flex:1;min-width:150px;background:var(--panel);border:1px solid var(--line);border-radius:var(--r);
+  padding:22px 18px;text-align:center;position:relative}
+.pipecell + .pipecell{margin-left:34px}
+.pipecell + .pipecell::before{content:"";position:absolute;left:-26px;top:50%;width:18px;height:1px;background:var(--line-bright)}
+.pipecell + .pipecell::after{content:"";position:absolute;left:-10px;top:50%;transform:translateY(-50%) rotate(45deg);
+  width:6px;height:6px;border-top:1px solid var(--line-bright);border-right:1px solid var(--line-bright)}
+.pipecell .v{font-family:"Playfair Display",serif;font-size:40px;color:var(--ink)}
+.pipecell .t{font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink3);margin-top:6px}
+.pipecell .s{font-size:12.5px;color:var(--ink3);margin-top:9px;line-height:1.5}
+.pipecell.gold .v{color:var(--brass)} .pipecell.green .v{color:var(--green2)} .pipecell.blue .v{color:#7fb3e8}
+
+/* ---------- charts ---------- */
+.chartcard{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);
+  border-radius:var(--r);padding:24px 22px 14px;margin-top:24px}
+.chartcard h3{font-size:18px;margin-bottom:2px}
+.chartcard .sub{font-size:12.5px;color:var(--ink3);margin-bottom:14px}
+.chartcard svg{width:100%;height:auto;display:block}
+.chartcard svg text{font-family:"DM Sans",sans-serif}
+details.tbl{margin:6px 0 6px;font-size:12.5px;color:var(--ink3)}
+details.tbl summary{cursor:pointer;letter-spacing:.6px}
+details.tbl table{width:100%;border-collapse:collapse;margin-top:8px}
+details.tbl td,details.tbl th{border-top:1px solid var(--line);padding:5px 8px;text-align:left;color:var(--ink2)}
+#tip{position:fixed;z-index:80;background:#0d131b;border:1px solid var(--line-bright);border-radius:8px;
+  padding:7px 11px;font-size:12.5px;color:var(--ink);pointer-events:none;opacity:0;transition:opacity .12s;white-space:nowrap}
+.chartrow{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+
+/* ---------- meeting cards ---------- */
+.meetgrid{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:26px}
+.meet{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:var(--r);
+  padding:26px 26px 20px;position:relative}
+.meet::before{content:"";position:absolute;top:0;left:26px;right:26px;height:2px;
+  background:linear-gradient(90deg,transparent,var(--brass),transparent);opacity:.5}
+.meet .who{display:flex;justify-content:space-between;gap:10px;align-items:baseline;flex-wrap:wrap}
+.meet h3{font-size:22px}
+.meet .chip{font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--brass);
+  border:1px solid var(--line-bright);border-radius:999px;padding:3px 11px;white-space:nowrap}
+.meet .role{font-size:13px;color:var(--ink3);margin:2px 0 12px}
+.meet ul{list-style:none;margin:10px 0 12px}
+.meet li{padding:7px 0 7px 22px;position:relative;border-top:1px solid rgba(201,169,106,.08);font-size:14.5px}
+.meet li:first-child{border-top:0}
+.meet li::before{content:"";position:absolute;left:4px;top:15px;width:7px;height:7px;border-radius:50%;
+  background:var(--stripe,var(--brass));opacity:.75}
+.meet li b{color:var(--ink);font-weight:500}
+.meet .status{background:rgba(63,107,92,.14);border:1px solid rgba(93,143,124,.3);border-radius:10px;
+  padding:12px 15px;font-size:13.5px;margin-top:6px}
+.meet .status b{color:var(--green2)}
+.doorline{font-size:13px;color:var(--ink3);font-style:italic;margin-bottom:10px}
+.doorline b{color:var(--brass);font-style:normal;font-weight:500}
+
+/* ---------- itinerary ---------- */
+.itin{display:flex;gap:8px;margin:26px 0 4px;flex-wrap:wrap}
+.day{flex:1;min-width:96px;background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 10px;text-align:center}
+.day .d{font-family:"Playfair Display",serif;font-size:17px;color:var(--ink)}
+.day .w{font-size:10.5px;letter-spacing:1.4px;text-transform:uppercase;color:var(--ink3)}
+.day .e{font-size:11.5px;margin-top:7px;color:var(--ink2);line-height:1.45}
+.day.hot{border-color:var(--line-bright);background:linear-gradient(180deg,#1b2430,var(--panel))}
+.day.hot .d{color:var(--brass)}
+
+/* ---------- replies wall ---------- */
+.wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:24px}
+.rep{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:14px 16px}
+.rep .n{color:var(--ink);font-weight:500;font-size:14.5px}
+.rep .c{font-size:11.5px;letter-spacing:1px;text-transform:uppercase;color:var(--brass);margin:1px 0 6px}
+.rep .w{font-size:12.8px;color:var(--ink3);line-height:1.5}
+.rep.hi{border-color:rgba(55,194,182,.35)}
+.rep.hi .c{color:var(--teal)}
+
+/* ---------- chain cards ---------- */
+.chain{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:var(--r);
+  padding:24px 26px;margin-top:20px}
+.chain h3{font-size:19px;margin-bottom:4px}
+.chain .steps{display:flex;gap:10px;flex-wrap:wrap;margin:14px 0 10px;align-items:center}
+.chain .st{background:#111820;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:12.5px;color:var(--ink2)}
+.chain .st b{color:var(--ink);font-weight:500}
+.chain .arr{color:var(--brass);font-size:14px}
+.chain p{font-size:14px;color:var(--ink2)}
+.chain p b{color:var(--ink);font-weight:500}
+
+/* ---------- team strip ---------- */
+.teamnote{font-size:13px;color:var(--ink3);font-style:italic;max-width:720px;margin-top:4px}
+.teamgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:14px;margin-top:22px}
+.tm{background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:16px 18px}
+.tm .t{color:var(--ink);font-weight:500;font-size:14.5px}
+.tm .d{font-size:13px;color:var(--ink3);margin-top:5px;line-height:1.55}
+.tm .tag{display:inline-block;font-size:10.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--green2);
+  border:1px solid rgba(93,143,124,.35);border-radius:999px;padding:2px 9px;margin-bottom:8px}
+
+/* ---------- learnings ---------- */
+.learn{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:24px}
+.lcard{background:linear-gradient(180deg,var(--panel),var(--panel2));border:1px solid var(--line);border-radius:var(--r);padding:22px 24px}
+.lcard .ln{width:30px;height:30px;border-radius:50%;border:1px solid var(--line-bright);display:flex;align-items:center;
+  justify-content:center;font-family:"Playfair Display",serif;color:var(--brass);margin-bottom:12px}
+.lcard h3{font-size:17.5px;margin-bottom:7px}
+.lcard p{font-size:13.8px;color:var(--ink2)}
+.lcard p b{color:var(--ink);font-weight:500}
+
+/* ---------- next ---------- */
+.next{margin-top:22px;border:1px solid var(--line);border-radius:var(--r);overflow:hidden}
+.nrow{display:flex;gap:16px;padding:15px 22px;border-top:1px solid var(--line);background:var(--panel);align-items:baseline}
+.nrow:first-child{border-top:0}
+.nrow .nwhen{flex:0 0 108px;font-size:11.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--brass)}
+.nrow .nwhat{font-size:14px;color:var(--ink2)}
+.nrow .nwhat b{color:var(--ink);font-weight:500}
+
+/* ---------- footer ---------- */
+footer{margin-top:64px;border-top:1px solid var(--line);padding:34px 0 46px;font-size:12.5px;color:var(--ink3)}
+footer .frow{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+footer p{max-width:860px;margin-top:12px;line-height:1.7}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(18px);transition:opacity .7s ease var(--d,0s),transform .7s ease var(--d,0s)}
+.reveal.in-view{opacity:1;transform:none}
+
+/* ---------- presenter ---------- */
+#deck{display:none}
+body.presenting{overflow:hidden}
+body.presenting nav,body.presenting .docroot,body.presenting #tip{display:none}
+body.presenting #deck{display:block;position:fixed;inset:0;background:var(--bg);z-index:100}
+.slide{position:absolute;inset:0;padding:7vh 9vw;display:flex;flex-direction:column;justify-content:center;
+  opacity:0;transform:translateX(40px);transition:opacity .35s,transform .35s;pointer-events:none}
+.slide.active{opacity:1;transform:none;pointer-events:auto}
+.slide .sk{font-size:13px;letter-spacing:3px;text-transform:uppercase;color:var(--brass);margin-bottom:2.4vh}
+.slide h2{font-size:clamp(34px,4.6vw,54px);line-height:1.14;margin-bottom:3.4vh;max-width:22ch}
+.slide h2 em{color:var(--brass);font-style:italic}
+.slide ul{list-style:none;max-width:70ch}
+.slide li{font-size:clamp(16px,1.75vw,22px);padding:1.25vh 0 1.25vh 30px;position:relative;color:var(--ink2);line-height:1.5}
+.slide li::before{content:"";position:absolute;left:6px;top:calc(1.25vh + .72em);width:8px;height:8px;border-radius:50%;background:var(--brass);opacity:.7}
+.slide li b{color:var(--ink);font-weight:500}
+.slide .bignums{display:flex;gap:4vw;margin:1.5vh 0;flex-wrap:wrap}
+.slide .bn .v{font-family:"Playfair Display",serif;font-size:clamp(44px,6.5vw,84px);color:var(--ink)}
+.slide .bn .l{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--ink3)}
+.slide .foot{margin-top:3vh;font-size:13.5px;color:var(--ink3);font-style:italic}
+#deckBrand{position:fixed;top:26px;left:30px;display:none;gap:12px;align-items:center;z-index:110}
+body.presenting #deckBrand{display:flex}
+#deckBrand .wordmark{font-size:14px}
+#pbar{position:fixed;bottom:0;left:0;right:0;display:none;justify-content:space-between;align-items:center;
+  padding:12px 30px;font-size:12px;color:var(--ink3);border-top:1px solid var(--line);background:rgba(16,22,30,.9);z-index:110}
+body.presenting #pbar{display:flex}
+#pbar button{background:none;border:1px solid var(--line-bright);color:var(--ink2);border-radius:999px;padding:5px 14px;cursor:pointer;font-size:12px}
+#deck.overview{overflow-y:auto}
+#deck.overview .slide{position:relative;inset:auto;opacity:1;transform:none;pointer-events:auto;display:block;
+  width:100%;height:230px;overflow:hidden;padding:0;border:1px solid var(--line);border-radius:12px;cursor:pointer;background:var(--panel)}
+#deck.overview .ovgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:14px;padding:90px 40px 80px}
+#deck.overview .slide-inner{transform:scale(.30);transform-origin:top left;width:1050px;height:740px;padding:60px;pointer-events:none}
+.ovtitle{position:absolute;bottom:10px;left:14px;font-size:11px;letter-spacing:1.4px;text-transform:uppercase;color:var(--brass);z-index:2}
+#deck:not(.overview) .ovgrid{display:contents}
+#deck:not(.overview) .slide-inner{display:flex;flex-direction:column;justify-content:center;height:100%}
+
+/* ---------- responsive ---------- */
+@media (max-width:960px){
+  .stats{grid-template-columns:repeat(3,1fr)}
+  .chartrow,.meetgrid,.learn{grid-template-columns:1fr}
+  .pipecell + .pipecell{margin-left:26px}
+}
+@media (max-width:600px){
+  .stats{grid-template-columns:repeat(2,1fr)}
+  .navchip{display:none}
+  .pipe{flex-direction:column}
+  .pipecell + .pipecell{margin-left:0;margin-top:26px}
+  .pipecell + .pipecell::before{left:50%;top:-18px;width:1px;height:12px}
+  .pipecell + .pipecell::after{left:calc(50% - 3px);top:-9px;transform:rotate(135deg)}
+}
+@media (prefers-reduced-motion: reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1!important;transform:none!important}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<div id="scrollbar"></div>
+<div id="tip" role="status"></div>
+
+<nav>
+  <div class="navin">
+    <div class="badge"><img src="rotating_logo.gif" alt="" onerror="this.outerHTML='<span class=mono>A</span>'"></div>
+    <div class="wordmark">Amphitrite<small>Fortnight in review</small></div>
+    <div class="navchip num">3 to 17 July 2026</div>
+    <button class="pbtn" id="presentBtn" type="button">Present</button>
+  </div>
+</nav>
+
+<div class="docroot">
+<header class="wrap">
+  <div class="kicker">Team update · Noah · Business Development</div>
+  <h1>Two weeks, <em>measured.</em></h1>
+  <p class="herosub">Every figure below is counted from the outreach mailbox, message by message, for the window <b>Friday 3 July to Friday 17 July</b>. The fortnight ran in two movements: a campaign wave from the desk, then a week in London that turned two of those threads into rooms.</p>
+  <div class="heroline num">Counted Friday 17 July, morning · LinkedIn touches not included · team-lane work credited where it belongs</div>
+
+  <div class="stats">
+    <div class="stat reveal" style="--stripe:#c98500"><div class="v num" data-count="399">0</div><div class="l">Emails sent</div></div>
+    <div class="stat reveal" style="--d:.06s;--stripe:#c98500"><div class="v num" data-count="201">0</div><div class="l">People reached</div></div>
+    <div class="stat reveal" style="--d:.12s;--stripe:#c98500"><div class="v num" data-count="83">0</div><div class="l">Companies</div></div>
+    <div class="stat reveal" style="--d:.18s;--stripe:#199e70"><div class="v num" data-count="13">0</div><div class="l">Replied this window</div></div>
+    <div class="stat reveal" style="--d:.24s;--stripe:#3987e5"><div class="v num" data-count="2">0</div><div class="l">London meetings held</div></div>
+    <div class="stat reveal" style="--d:.30s;--stripe:#3987e5"><div class="v num" data-count="9">0</div><div class="l">Days on the ground</div></div>
+  </div>
+</header>
+
+<div class="wrap">
+
+<!-- ====== 1 · pipeline ====== -->
+<section id="pipeline">
+  <div class="slabel"><span class="snum">1</span> The shape of the fortnight</div>
+  <h2>From four hundred emails to two rooms</h2>
+  <p class="lede">Volume is only the start of the story. The window's <b>399 external emails</b> delivered <b>401 per-recipient touches</b> (two emails each addressed two people): <b>141 first touches</b> and <b>260 follow-ups</b>. The follow-ups are where the conversations came from: both London meetings, the SeaCras introduction and the ONE Line referral all moved on a second, third or fourth touch.</p>
+  <div class="pipe">
+    <div class="pipecell gold reveal"><div class="v num">399</div><div class="t">Emails sent</div><div class="s">141 first touches · 260 follow-ups on open threads</div></div>
+    <div class="pipecell gold reveal" style="--d:.08s"><div class="v num">75</div><div class="t">Threads at 3rd+ touch</div><div class="s">18 of them Breakbulk and heavy-lift threads</div></div>
+    <div class="pipecell green reveal" style="--d:.16s"><div class="v num">13</div><div class="t">People replied</div><div class="s">20 reply messages · plus 23 out-of-office harvested for redirects</div></div>
+    <div class="pipecell blue reveal" style="--d:.24s"><div class="v num">2</div><div class="t">Meetings in the room</div><div class="s">Steamship Mutual and Hiscox, both Monday 13 July, both Bishopsgate</div></div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 2 · volume ====== -->
+<section id="volume">
+  <div class="slabel"><span class="snum">2</span> Outreach volume</div>
+  <h2>Two waves, deliberately spaced</h2>
+  <p class="lede">Wave one, <b>6 to 8 July</b>: the London insurance campaign and the Breakbulk third touches, 195 emails over three days before the flight. Wave two, <b>13 to 14 July</b>: the follow-up machine, 154 threaded reply-all drafts built, linted and placed in a single day, then released, 178 sends across the two days.</p>
+
+  <div class="chartcard reveal">
+    <h3>Emails sent per day</h3>
+    <div class="sub num">External sends from the outreach mailbox · 3 to 17 July 2026</div>
+    <svg id="dailyChart" viewBox="0 0 1000 300" role="img" aria-label="Bar chart of emails sent per day, 3 to 17 July 2026. Peak days: 6 July 79, 7 July 60, 8 July 56, 13 July 31, 14 July 147."></svg>
+    <details class="tbl"><summary>View as table</summary><table id="dailyTable"></table></details>
+  </div>
+
+  <div class="chartrow">
+    <div class="chartcard reveal">
+      <h3>Touches by round</h3>
+      <div class="sub">Each email's position in its own thread</div>
+      <svg id="roundChart" viewBox="0 0 520 240" role="img" aria-label="Horizontal bars: 141 first touches, 164 second, 73 third, 23 fourth or later."></svg>
+      <details class="tbl"><summary>View as table</summary><table id="roundTable"></table></details>
+    </div>
+    <div class="chartcard reveal" style="--d:.08s">
+      <h3>The follow-up queue, by desk</h3>
+      <div class="sub">154 threaded reply-alls built 13 July · all now sent</div>
+      <svg id="mixChart" viewBox="0 0 520 240" role="img" aria-label="Horizontal bars: insurance 98, London shipping and operations 28, Breakbulk and heavy-lift 18, cruise 10."></svg>
+      <details class="tbl"><summary>View as table</summary><table id="mixTable"></table></details>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 3 · London ====== -->
+<section id="london">
+  <div class="slabel"><span class="snum">3</span> The London week</div>
+  <h2>Nine days on the ground</h2>
+  <p class="lede">Flew out <b>Thursday 9 July</b> planning a weekend; extended through <b>Friday the 17th</b> when the meetings started landing. Both rooms happened on the Monday, three hundred metres apart on Bishopsgate.</p>
+
+  <div class="itin">
+    <div class="day reveal"><div class="w">Thu</div><div class="d num">9</div><div class="e">Fly to London · Steamship scheduling email out</div></div>
+    <div class="day reveal" style="--d:.04s"><div class="w">Fri to Sun</div><div class="d num">10 to 12</div><div class="e">Taslim confirms Monday · Kevin nudged, offers coffee</div></div>
+    <div class="day hot reveal" style="--d:.08s"><div class="w">Mon</div><div class="d num">13</div><div class="e"><b>Steamship 14:00 · Hiscox 15:30</b> · both recapped same day · 31 sends</div></div>
+    <div class="day reveal" style="--d:.12s"><div class="w">Tue</div><div class="d num">14</div><div class="e">Follow-up queue released · 147 sends · ONE Line intro email</div></div>
+    <div class="day reveal" style="--d:.16s"><div class="w">Wed</div><div class="d num">15</div><div class="e">Hiscox proposal recap · SeaCras technical reply</div></div>
+    <div class="day reveal" style="--d:.20s"><div class="w">Thu to Fri</div><div class="d num">16 to 17</div><div class="e">Replies land · ONE Line circulates internally · home Friday</div></div>
+  </div>
+
+  <div class="meetgrid">
+    <div class="meet reveal">
+      <div class="who"><h3>Steamship Mutual</h3><span class="chip">P&amp;I · 14:00</span></div>
+      <div class="role">Taslim Imad · Manager, Loss Prevention · Master Mariner, MBA, AFNI · 155 Bishopsgate</div>
+      <div class="doorline">The door: he <b>came to us</b>, replying to the London insurance campaign that reconstructing the conditions a vessel actually experienced "sounds interesting".</div>
+      <ul>
+        <li><b>Claims-side reports landed as the wedge:</b> an independent account of the weather along a voyage, from a model that was already running when it happened, plus the route re-enactment showing safest course against charter speed.</li>
+        <li><b>He was invited to shape the report format</b> to how their desks actually work; tailoring is the pitch, not a fixed product.</li>
+        <li><b>Preventative lane redirected:</b> for live safeguards he pointed us at OrcaAI territory; useful honesty about where loss prevention buys versus where claims buys.</li>
+        <li><b>Credibility angle that worked:</b> the same sea-state models run in defence and anti-submarine work; evidence that holds for navies holds in disputes.</li>
+      </ul>
+      <div class="status"><b>Where it stands:</b> recap and open questions sent same day, 16:18. Next step offered: a technical follow-up call with the team. Four more Steamship contacts are queued behind this relationship, held on purpose.</div>
+    </div>
+
+    <div class="meet reveal" style="--d:.1s;--stripe:#37c2b6">
+      <div class="who"><h3>Hiscox</h3><span class="chip">Lloyd's market · 15:30</span></div>
+      <div class="role">Kevin Lee · Senior Claims Underwriter, Marine Energy &amp; Specialty · 22 Bishopsgate</div>
+      <div class="doorline">The door: <b>an out-of-office</b>. Ben Watson's auto-reply named Kevin; the redirect went out 8 July, he answered the same day, and five days later we had coffee at their office.</div>
+      <ul>
+        <li><b>Claims side:</b> post-claim weather report along the route, plus the after-the-fact optimisation check, safest course or the speed the charter demanded.</li>
+        <li><b>Preventative side:</b> pre-trip recommended course, the Ocean Bulletin as a pre-route check against contract limits, and live warnings when the forecast crosses them en route.</li>
+        <li><b>End goal on the table:</b> a tailored report-generating dashboard for the insurance desk; Kevin wants his team looped in, possibly Ben Watson too.</li>
+        <li><b>Full written proposal sent Wednesday 17:41</b>, the whole solution in his inbox to circulate.</li>
+      </ul>
+      <div class="status"><b>Where it stands:</b> the next move is his internal share-around; a proposal email gets forwarded before it gets answered, and two working days of mid-July silence is cadence, not a signal. If nothing lands by Tuesday, the nudge is a presentation offer.</div>
+    </div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 4 · replies ====== -->
+<section id="replies">
+  <div class="slabel"><span class="snum">4</span> What came back</div>
+  <h2>Thirteen people wrote back</h2>
+  <p class="lede">Every reply below is a person, not an auto-response; the 23 out-of-office replies were harvested separately for redirect targets, and 3 addresses bounced for re-sourcing.</p>
+  <div class="wall">
+    <div class="rep hi reveal"><div class="n">Taslim Imad</div><div class="c">Steamship Mutual</div><div class="w">Booked the Monday meeting; "looking forward to learning how it works in practice".</div></div>
+    <div class="rep hi reveal"><div class="n">Kevin Lee</div><div class="c">Hiscox</div><div class="w">Five replies in the window; met over coffee; proposal now with him.</div></div>
+    <div class="rep hi reveal"><div class="n">Roberto Di Tucci</div><div class="c">Windward Nexus</div><div class="w">Answered the Sleipnir news by introducing the CEO of SeaCras.</div></div>
+    <div class="rep hi reveal"><div class="n">Fabio Corallo</div><div class="c">ONE Line · Genoa</div><div class="w">Twice in the window; passed us to Global Vessel Operations in Singapore.</div></div>
+    <div class="rep hi reveal"><div class="n">Lilian Goh</div><div class="c">ONE Line · Singapore</div><div class="w">Circulated the material to the relevant ops teams this morning.</div></div>
+    <div class="rep reveal"><div class="n">Mark Egglestone</div><div class="c">Tokio Marine Kiln</div><div class="w">Forwarded the note internally, a second desk answered.</div></div>
+    <div class="rep reveal"><div class="n">David Horwood</div><div class="c">Tokio Marine Kiln</div><div class="w">Energy-loss thread, engaged on the claims angle.</div></div>
+    <div class="rep reveal"><div class="n">Issy Sykes</div><div class="c">Convex</div><div class="w">Replied on the evidence-quality thread.</div></div>
+    <div class="rep reveal"><div class="n">Nick Whitear</div><div class="c">Canopius</div><div class="w">Replied on diversions and unplanned conditions.</div></div>
+    <div class="rep reveal"><div class="n">Sam Edward</div><div class="c">Lancashire Group</div><div class="w">Replied on the energy-risks thread.</div></div>
+    <div class="rep reveal"><div class="n">Dmitriy Radev</div><div class="c">Varamar</div><div class="w">Breakbulk heavy-lift routing thread.</div></div>
+    <div class="rep reveal"><div class="n">Morten Westberg</div><div class="c">Radio Holland</div><div class="w">High-resolution data thread.</div></div>
+    <div class="rep reveal"><div class="n">Nicola Foster</div><div class="c">Maritime Craft</div><div class="w">Post-call thread, still warm.</div></div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 5 · chains ====== -->
+<section id="chains">
+  <div class="slabel"><span class="snum">5</span> Threads that turned into pipeline</div>
+  <h2>Two chains worth watching</h2>
+
+  <div class="chain reveal">
+    <h3>Windward Nexus to SeaCras: a partnership door</h3>
+    <div class="steps">
+      <span class="st"><b>8 Jul</b> follow-up to Roberto</span><span class="arr">→</span>
+      <span class="st"><b>13 Jul</b> Sleipnir press note + Bulletin offer</span><span class="arr">→</span>
+      <span class="st"><b>13 Jul, 17:33</b> Roberto introduces <b>Mario Spadina, CEO SeaCras</b></span><span class="arr">→</span>
+      <span class="st"><b>15 Jul</b> technical proposal sent</span>
+    </div>
+    <p>SeaCras detects pollution and coastal events from satellites; they see a position at one moment, and the water keeps moving. The reply on the table: our current field underneath their detections gives a <b>forward answer (where it drifts next) and a backward one (toward the source)</b>, with a concrete demonstrator proposed: take an event SeaCras already picked up, overlay our hindcast currents, test the trajectories in both directions. Oceanographer offered for the call.</p>
+  </div>
+
+  <div class="chain reveal" style="--d:.08s">
+    <h3>ONE Line: from a reefer thread in Genoa to vessel ops in Singapore</h3>
+    <div class="steps">
+      <span class="st"><b>3 Jul</b> Fabio Corallo replies (2nd touch)</span><span class="arr">→</span>
+      <span class="st"><b>13 Jul</b> re-engaged</span><span class="arr">→</span>
+      <span class="st"><b>14 Jul</b> intro email to <b>Lilian Goh, Global Vessel Operations</b></span><span class="arr">→</span>
+      <span class="st"><b>17 Jul</b> "shared with the relevant teams"</span>
+    </div>
+    <p>A named referral inside one of the largest container carriers, landing in the Singapore operations centre. Her teams reach out if there are questions; Fabio stays the warm anchor in Genoa. Patience thread, but the material is now circulating <b>inside</b> ONE Line rather than at its door.</p>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 6 · team ====== -->
+<section id="team">
+  <div class="slabel"><span class="snum">6</span> Around the team, same fortnight</div>
+  <h2>The context my week sat inside</h2>
+  <p class="teamnote">Credit where it belongs: these moved on Thomas's threads and company milestones, listed here because the team picture is incomplete without them, not as my numbers.</p>
+  <div class="teamgrid">
+    <div class="tm reveal"><span class="tag">Company</span><div class="t">EUDIS Cohort 3 onboarding done</div><div class="d">One of 20 chosen from 499 applicants to the EU defence innovation scheme; onboarding call ran Thursday 16 July.</div></div>
+    <div class="tm reveal"><span class="tag">Company</span><div class="t">Sleipnir release picked up by 4 outlets</div><div class="d">Splash247, Transport Online, Workboat365 and Windtech carried our Heerema voyage-optimisation story; it became follow-up ammunition the same week.</div></div>
+    <div class="tm reveal"><span class="tag">Thomas</span><div class="t">Saipem intro call, today 11:00</div><div class="d">Ocean and Seabed Engineering (Marco Cardellini + Alessia Nardi), offshore engineering major, first technical conversation.</div></div>
+    <div class="tm reveal"><span class="tag">Company</span><div class="t">PIER71 Smart Port Challenge: shortlisted</div><div class="d">Singapore's port-innovation programme moved us to the interview round; interview slot booked.</div></div>
+    <div class="tm reveal"><span class="tag">Thomas</span><div class="t">Maritime academies are answering</div><div class="d">Training-simulation threads live with Solent, Aboa Mare, MCAST, ENSM, Marine Institute (Canada), USN (Norway) and NMCI (Ireland); Szczecin intro booked for 30 July.</div></div>
+    <div class="tm reveal"><span class="tag">Thomas</span><div class="t">Calls stacked for the coming weeks</div><div class="d">Anthony Veder reconnect and EyeGauge follow-up both Thursday 23 July; DMI and Blue Autonomy appointments came through the booking page.</div></div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 7 · learnings ====== -->
+<section id="learnings">
+  <div class="slabel"><span class="snum">7</span> What the fortnight taught</div>
+  <h2>Five things I am keeping</h2>
+  <div class="learn">
+    <div class="lcard reveal"><div class="ln">i</div><h3>Out-of-office replies are doors, not dead ends</h3>
+      <p>23 OOO auto-replies came back this window. Each names who is covering; the redirect carries the original note to that person with an honest first line. <b>The Hiscox meeting exists because of one:</b> Ben Watson's auto-reply named Kevin Lee, and five days later we were having coffee at 22 Bishopsgate.</p></div>
+    <div class="lcard reveal" style="--d:.06s"><div class="ln">ii</div><h3>Third touches are where replies live</h3>
+      <p>75 threads received their third or later email this window, 18 of them Breakbulk. The pattern held: <b>Roberto introduced SeaCras's CEO on touch three; Fabio moved on touch two and again on three.</b> Persistence works when each touch adds substance instead of repeating the last one.</p></div>
+    <div class="lcard reveal" style="--d:.12s"><div class="ln">iii</div><h3>Our own press release became outreach ammunition</h3>
+      <p>We put out the Sleipnir story and four trade outlets carried it. <b>"A few outlets picked it up this week, Splash247 tells it best"</b> is a different sentence from a cold claim: it signals initiative, and it directly triggered the SeaCras introduction.</p></div>
+    <div class="lcard reveal" style="--d:.18s"><div class="ln">iv</div><h3>The insurance pitch sharpened in the rooms</h3>
+      <p>Both desks bought the same wedge: <b>an independent record of conditions that existed before the loss</b>, not an expert report built after it. The preventative lane routes differently: loss prevention pointed us toward the ops side (and named OrcaAI territory), so claims and prevention get pitched as separate doors from now on.</p></div>
+    <div class="lcard reveal" style="--d:.24s"><div class="ln">v</div><h3>Validation wording now runs in two clean lanes</h3>
+      <p>Currents are validated against <b>satellite observations and drifter buoys</b>; AIS and voyage history belong to the <b>vessel model</b>. Thomas caught the merged wording just before a satellite-data CEO joined the audience; every template was corrected the same day. Cost of a wrong sentence at the wrong desk: a technical partnership.</p></div>
+    <div class="lcard reveal" style="--d:.30s"><div class="ln">vi</div><h3>The follow-up machine is now industrial</h3>
+      <p>One day, 13 July: due-list computed, <b>154 threaded reply-all drafts</b> assembled from each thread's own history, style-linted, placed and count-verified. Every draft from that queue is now sent. The same machine reruns for every future wave; the marginal cost of round four is near zero.</p></div>
+  </div>
+</section>
+<div class="divider"></div>
+
+<!-- ====== 8 · next ====== -->
+<section id="next">
+  <div class="slabel"><span class="snum">8</span> Next moves</div>
+  <h2>The week ahead</h2>
+  <div class="next reveal">
+    <div class="nrow"><div class="nwhen">Tue 21 Jul</div><div class="nwhat"><b>Hiscox nudge if quiet:</b> offer the presentation walk-through of the proposal to Kevin's wider team.</div></div>
+    <div class="nrow"><div class="nwhen">This week</div><div class="nwhat"><b>Steamship follow-through:</b> send the method papers, offer the technical team call, then release the four held Steamship colleague threads.</div></div>
+    <div class="nrow"><div class="nwhen">This week</div><div class="nwhat"><b>SeaCras demonstrator:</b> agree the call, pick one historical detection event, overlay hindcast currents forward and backward.</div></div>
+    <div class="nrow"><div class="nwhen">Rolling</div><div class="nwhat"><b>ONE Line:</b> hold a week, then check back with Lilian; keep Fabio warm in Genoa.</div></div>
+    <div class="nrow"><div class="nwhen">Next batch</div><div class="nwhat"><b>Post-trip re-draft:</b> the "while I'm in London" CTAs expired Friday; leftover threads get the short-call ask. The separate 35-thread post-call lane runs as its own batch.</div></div>
+    <div class="nrow"><div class="nwhen">Standing</div><div class="nwhat"><b>Insurance page follow-through:</b> the 25 early sends get the live use-case page link on their next touch.</div></div>
+  </div>
+</section>
+
+</div><!-- /content wrap -->
+
+<footer>
+  <div class="wrap">
+    <div class="frow">
+      <div class="badge"><img src="rotating_logo.gif" alt="" onerror="this.outerHTML='<span class=mono>A</span>'"></div>
+      <div class="wordmark">Amphitrite<small>Internal · not for distribution</small></div>
+    </div>
+    <p><b>How these numbers were counted:</b> every figure comes from the outreach mailbox (Sent Items and INBOX), window 3 to 17 July 2026, counted Friday morning 17 July. "Emails sent" are external sends only; internal mail is excluded. Touch rounds are each recipient's position in their own thread across the campaign since June; two emails each addressed two recipients, so 399 emails carry 401 recipient touches. Reply counts exclude auto-responses, out-of-office messages and newsletters. LinkedIn activity is not included in any figure. Items in "Around the team" are attributed and are not counted in the headline numbers. This page is unlisted and set to noindex.</p>
+  </div>
+</footer>
+</div><!-- /docroot -->
+
+<!-- ====== presenter ====== -->
+<div id="deck" aria-hidden="true">
+  <div class="ovgrid" id="ovgrid"></div>
+</div>
+<div id="deckBrand" hidden>
+  <div class="badge"><img src="rotating_logo.gif" alt="" onerror="this.outerHTML='<span class=mono>A</span>'"></div>
+  <div class="wordmark">Amphitrite<small>Fortnight in review</small></div>
+</div>
+<div id="pbar" hidden>
+  <span>← → advance · Esc overview · P exit</span>
+  <span id="slidecount" class="num"></span>
+  <button id="exitBtn" type="button">Exit</button>
+</div>
+
+<script>
+document.documentElement.className='js';
+var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* ---------- data ---------- */
+var DAILY=[["3 Jul",9],["4 Jul",5],["5 Jul",0],["6 Jul",79],["7 Jul",60],["8 Jul",56],["9 Jul",3],["10 Jul",1],["11 Jul",0],["12 Jul",1],["13 Jul",31],["14 Jul",147],["15 Jul",2],["16 Jul",5],["17 Jul",0]];
+var ROUNDS=[["1st touch",141],["2nd touch",164],["3rd touch",73],["4th touch +",23]];
+var MIX=[["Insurance",98],["London shipping & ops",28],["Breakbulk & heavy-lift",18],["Cruise",10]];
+var GOLD="#c98500",INK="#f4f2ec",INK3="#8f8c80",LINE="rgba(201,169,106,.16)";
+
+function esc(s){return String(s).replace(/[&<>"']/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})}
+var tip=document.getElementById('tip');
+function showTip(e,t){tip.innerHTML=t;tip.style.opacity=1;
+  var x=Math.min(e.clientX+14,innerWidth-tip.offsetWidth-10),y=Math.max(e.clientY-38,8);
+  tip.style.left=x+'px';tip.style.top=y+'px'}
+function hideTip(){tip.style.opacity=0}
+
+/* ---------- vertical day bars ---------- */
+function dayChart(id,data){
+  var svg=document.getElementById(id);if(!svg)return;
+  var W=1000,H=300,pl=16,pr=16,pt=26,pb=40,iw=W-pl-pr,ih=H-pt-pb;
+  var max=Math.max.apply(null,data.map(function(d){return d[1]}));
+  var bw=Math.min(40,iw/data.length-10),step=iw/data.length,html='';
+  [0.5,1].forEach(function(f){var y=pt+ih-ih*f;
+    html+='<line x1="'+pl+'" x2="'+(W-pr)+'" y1="'+y+'" y2="'+y+'" stroke="'+LINE+'" stroke-width="1"/>';
+    html+='<text x="'+pl+'" y="'+(y-6)+'" fill="'+INK3+'" font-size="11">'+Math.round(max*f)+'</text>'});
+  data.forEach(function(d,i){
+    var h=max?Math.round(ih*d[1]/max):0,x=pl+step*i+(step-bw)/2,y=pt+ih-h;
+    html+='<g class="bar" data-l="'+esc(d[0])+'" data-v="'+d[1]+'">';
+    html+='<rect x="'+(pl+step*i)+'" y="'+pt+'" width="'+step+'" height="'+ih+'" fill="transparent"/>';
+    if(d[1]>0) html+='<rect x="'+x+'" y="'+y+'" width="'+bw+'" height="'+Math.max(h,3)+'" rx="4" fill="'+GOLD+'"/>';
+    else html+='<rect x="'+x+'" y="'+(pt+ih-2)+'" width="'+bw+'" height="2" rx="1" fill="'+LINE+'"/>';
+    if(d[1]>=31) html+='<text x="'+(x+bw/2)+'" y="'+(y-8)+'" text-anchor="middle" fill="'+INK+'" font-size="13" font-weight="700">'+d[1]+'</text>';
+    html+='<text x="'+(x+bw/2)+'" y="'+(H-14)+'" text-anchor="middle" fill="'+INK3+'" font-size="11">'+esc(d[0].replace(' Jul',''))+'</text></g>'});
+  html+='<text x="'+(W-pr)+'" y="'+(H-14)+'" text-anchor="end" fill="'+INK3+'" font-size="11" font-style="italic">July</text>';
+  svg.innerHTML=html;
+  svg.querySelectorAll('.bar').forEach(function(g){
+    g.addEventListener('mousemove',function(e){showTip(e,'<b>'+g.dataset.l+'</b> · '+g.dataset.v+' emails')});
+    g.addEventListener('mouseleave',hideTip)});
+}
+/* ---------- horizontal bars ---------- */
+function hChart(id,data,unit){
+  var svg=document.getElementById(id);if(!svg)return;
+  var W=520,rowH=46,pt=10,H=pt+data.length*rowH+10;svg.setAttribute('viewBox','0 0 '+W+' '+H);
+  var lw=180,max=Math.max.apply(null,data.map(function(d){return d[1]})),iw=W-lw-64,html='';
+  data.forEach(function(d,i){
+    var y=pt+i*rowH,w=Math.max(Math.round(iw*d[1]/max),4);
+    html+='<g class="bar" data-l="'+esc(d[0])+'" data-v="'+d[1]+'">';
+    html+='<rect x="0" y="'+y+'" width="'+W+'" height="'+(rowH-8)+'" fill="transparent"/>';
+    html+='<text x="'+(lw-10)+'" y="'+(y+rowH/2+1)+'" text-anchor="end" fill="#c8c3b4" font-size="13">'+esc(d[0])+'</text>';
+    html+='<rect x="'+lw+'" y="'+(y+8)+'" width="'+w+'" height="'+(rowH-24)+'" rx="4" fill="'+GOLD+'"/>';
+    html+='<text x="'+(lw+w+10)+'" y="'+(y+rowH/2+1)+'" fill="'+INK+'" font-size="14" font-weight="700">'+d[1]+'</text></g>'});
+  svg.innerHTML=html;
+  svg.querySelectorAll('.bar').forEach(function(g){
+    g.addEventListener('mousemove',function(e){showTip(e,'<b>'+g.dataset.l+'</b> · '+g.dataset.v+' '+unit)});
+    g.addEventListener('mouseleave',hideTip)});
+}
+function fillTable(id,data,h1,h2){var t=document.getElementById(id);if(!t)return;
+  t.innerHTML='<tr><th>'+esc(h1)+'</th><th>'+esc(h2)+'</th></tr>'+data.map(function(d){return '<tr><td>'+esc(d[0])+'</td><td class="num">'+d[1]+'</td></tr>'}).join('')}
+dayChart('dailyChart',DAILY);
+hChart('roundChart',ROUNDS,'emails');hChart('mixChart',MIX,'drafts');
+fillTable('dailyTable',DAILY,'Day','Emails');fillTable('roundTable',ROUNDS,'Round','Emails');fillTable('mixTable',MIX,'Desk','Drafts');
+
+/* ---------- count-ups ---------- */
+function countUp(el){var end=+el.dataset.count;if(reduce){el.textContent=end;return}
+  var t0=null;function step(ts){if(!t0)t0=ts;var p=Math.min((ts-t0)/900,1);p=1-Math.pow(1-p,3);
+    el.textContent=Math.round(end*p);if(p<1)requestAnimationFrame(step)}requestAnimationFrame(step)}
+/* ---------- reveals ---------- */
+var revealed=new Set();
+if(!reduce&&'IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){
+    en.target.classList.add('in-view');
+    en.target.querySelectorAll('[data-count]').forEach(function(c){if(!revealed.has(c)){revealed.add(c);countUp(c)}});
+    io.unobserve(en.target)}})},{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+  document.querySelectorAll('header [data-count]').forEach(function(c){if(!revealed.has(c)){revealed.add(c);countUp(c)}});
+}else{
+  document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in-view')});
+  document.querySelectorAll('[data-count]').forEach(function(c){c.textContent=c.dataset.count});
+}
+/* ---------- scroll progress ---------- */
+addEventListener('scroll',function(){var h=document.documentElement;
+  document.getElementById('scrollbar').style.width=(h.scrollTop/(h.scrollHeight-h.clientHeight)*100)+'%'},{passive:true});
+
+/* ---------- presenter ---------- */
+var SLIDES=[
+ {k:"Team update · Noah · 3 to 17 July 2026",t:"Two weeks, <em>measured.</em>",
+  b:["<b>399 emails</b>, 201 people, 83 companies","<b>13 replies</b> · <b>2 meetings</b> in London rooms","Every number counted from the mailbox, not estimated"],
+  f:"nodshead.github.io · unlisted page, live numbers behind me"},
+ {k:"The shape of it",t:"Two waves, then a week in the field",
+  b:["<b>6 to 8 Jul:</b> insurance campaign + Breakbulk third touches, 195 sends","<b>9 Jul:</b> flew to London for a weekend","<b>13 Jul:</b> both meetings, same Monday, same street","<b>14 Jul:</b> released the follow-up queue, 147 sends","Extended to Friday because the replies kept landing"]},
+ {k:"Volume",t:"399 sent: 141 openers, 260 follow-ups",
+  b:["<b>164 second touches</b>, 73 third, 23 fourth or later","75 threads reached round three this window","18 of those are Breakbulk heavy-lift threads","The 14 Jul queue: <b>154 threaded reply-alls in one day</b>, drafted, linted, verified"]},
+ {k:"Conversion",t:"13 people wrote back",
+  b:["Steamship, Hiscox, TMK twice, Convex, Canopius, Lancashire","ONE Line twice: Genoa, then <b>Singapore vessel ops</b>","Windward Nexus answered with an introduction","Plus 23 out-of-office replies harvested for redirect targets"]},
+ {k:"London · Monday 13 July · 14:00",t:"Steamship Mutual",
+  b:["Taslim Imad, Loss Prevention Manager, <b>Master Mariner</b>","He came to us: replied to the campaign, booked the meeting","The wedge: <b>an independent record of conditions</b>, running before any loss","Invited to shape the report to their desks; recap sent same day","Next: technical call with the team; 4 colleague threads held behind it"]},
+ {k:"London · Monday 13 July · 15:30",t:"Hiscox",
+  b:["Kevin Lee, Senior Claims Underwriter, Marine Energy &amp; Specialty","<b>The door was an out-of-office</b> that named him. Redirect to coffee in 5 days","Claims report + route re-enactment + preventative watch","End goal on the table: <b>a report-generating dashboard</b> for the desk","Full proposal in his inbox Wednesday; he loops his team next"]},
+ {k:"Hiscox · why silence is fine",t:"The proposal is doing its rounds",
+  b:["Kevin said it in the room: <b>he wants his team in</b>, possibly Ben Watson","A proposal email gets <b>forwarded before it gets answered</b>","Two working days of quiet in mid-July is cadence, not a signal","If Tuesday stays quiet: nudge with a presentation offer"]},
+ {k:"Pipeline",t:"Two chains opened",
+  b:["<b>SeaCras:</b> Sleipnir press note → their CEO introduced → demonstrator proposed: overlay our hindcast currents on a detection they already made","<b>ONE Line:</b> Fabio in Genoa → Lilian Goh, Global Vessel Ops Singapore → material circulating internally since this morning"]},
+ {k:"Around the team · attributed",t:"The same fortnight, team-wide",
+  b:["<b>EUDIS cohort onboarding done</b>: 20 chosen from 499","Sleipnir release carried by <b>4 trade outlets</b>","Saipem intro call today; PIER71 interview booked","Academies answering Thomas across 7 schools; Szczecin on 30 Jul"]},
+ {k:"Learnings",t:"What I am keeping",
+  b:["<b>OOO replies are doors:</b> Hiscox came from one","<b>Third touches earn replies:</b> SeaCras arrived on touch three","<b>Own press is ammunition:</b> the release triggered an intro","<b>Claims and prevention are separate doors</b> at insurers","<b>Validation lanes locked:</b> currents = satellite + drifters; AIS = vessel model"]},
+ {k:"Next",t:"The week ahead",
+  b:["Tue: Hiscox nudge with presentation offer, if quiet","Steamship: papers + team call, then release the held colleagues","SeaCras: agree the demonstrator event","Re-CTA the expired London wording; run the 35-thread post-call lane"],
+  f:"Full detail, charts and the replies wall: scroll the page behind this deck"}
+];
+var deck=document.getElementById('deck'),ov=document.getElementById('ovgrid'),cur=0,presenting=false;
+ov.innerHTML=SLIDES.map(function(s,i){
+  var inner='<div class="sk">'+s.k+'</div><h2>'+s.t+'</h2>'+
+    (s.n?'<div class="bignums">'+s.n.map(function(x){return '<div class="bn"><div class="v num">'+x[0]+'</div><div class="l">'+x[1]+'</div></div>'}).join('')+'</div>':'')+
+    '<ul>'+s.b.map(function(li){return '<li>'+li+'</li>'}).join('')+'</ul>'+(s.f?'<div class="foot">'+s.f+'</div>':'');
+  return '<div class="slide" data-i="'+i+'"><div class="slide-inner">'+inner+'</div><div class="ovtitle">'+(i+1)+' · '+esc(s.k.split('·')[0].trim())+'</div></div>'}).join('');
+var slides=deck.querySelectorAll('.slide');
+function go(i){cur=Math.max(0,Math.min(SLIDES.length-1,i));
+  slides.forEach(function(s,j){s.classList.toggle('active',j===cur)});
+  document.getElementById('slidecount').textContent=(cur+1)+' / '+SLIDES.length}
+function setPresent(on){presenting=on;document.body.classList.toggle('presenting',on);
+  deck.classList.remove('overview');deck.setAttribute('aria-hidden',!on);
+  document.getElementById('deckBrand').hidden=!on;document.getElementById('pbar').hidden=!on;
+  if(on)go(cur)}
+document.getElementById('presentBtn').addEventListener('click',function(){setPresent(true)});
+document.getElementById('exitBtn').addEventListener('click',function(){setPresent(false)});
+deck.addEventListener('click',function(e){
+  if(e.target.closest('a,button'))return;
+  var sl=e.target.closest('.slide');
+  if(deck.classList.contains('overview')){if(sl){go(+sl.dataset.i);deck.classList.remove('overview')}return}
+  (e.clientX>innerWidth/2)?go(cur+1):go(cur-1)});
+addEventListener('keydown',function(e){
+  if(e.key==='p'||e.key==='P'){setPresent(!presenting);return}
+  if(!presenting)return;
+  if(e.key==='Escape'){deck.classList.toggle('overview')}
+  else if(e.key==='ArrowRight'||e.key===' '||e.key==='PageDown'){e.preventDefault();go(cur+1)}
+  else if(e.key==='ArrowLeft'||e.key==='PageUp'){e.preventDefault();go(cur-1)}});
+</script>
+</body>
+</html>
